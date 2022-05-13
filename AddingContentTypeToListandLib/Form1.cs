@@ -24,7 +24,7 @@ namespace AddingContentTypeToListandLib
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
-            using(ClientContext clientContext = new ClientContext("http://vm-021-tzc02/sites/CSOMSite/"))
+            using(ClientContext clientContext = new ClientContext("SiteURL"))
             {
                 Web web = clientContext.Web;
                 List myLib =  web.Lists.GetByTitle("Documents");
